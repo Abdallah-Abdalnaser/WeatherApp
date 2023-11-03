@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #00feba, #5b548a);
+  padding: 19px;
+  border-radius: 20px;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .card .searchbar {
+  display: flex;
+  width: 100%;
+}
+.container .card .searchbar input {
+  padding: 15px;
+  border-radius: 24px;
+  border: 0px;
+  outline: 0px;
+  width: 300px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.container .card .searchbar input::-moz-placeholder {
+  color: #ccc;
+}
+.container .card .searchbar input::placeholder {
+  color: #ccc;
+}
+.container .card .searchbar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .card .searchbar button svg {
+  fill: #777;
+}
+.container .card .tem {
+  text-align: center;
+}
+.container .card .tem img {
+  width: 100px;
+  margin: 20px 0px;
+}
+.container .card .tem h3 {
+  font-size: 60px;
+  font-weight: 300;
+}
+.container .card .tem h3 sup {
+  font-size: 40px;
+}
+.container .card .tem h4 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.container .card .humidityandwind {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+.container .card .humidityandwind .humidity, .container .card .humidityandwind .windspeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .humidityandwind .humidity img, .container .card .humidityandwind .windspeed img {
+  width: 40px;
+}
+.container .card .humidityandwind .humidity .data, .container .card .humidityandwind .windspeed .data {
+  margin-left: 10px;
+}
+.container .card .humidityandwind .humidity .data h5, .container .card .humidityandwind .windspeed .data h5 {
+  font-size: 20px;
+  font-weight: 200;
+}
+.container .card .humidityandwind .humidity .data h6, .container .card .humidityandwind .windspeed .data h6 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/*animation*/
+@keyframes btnAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */

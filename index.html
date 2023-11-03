@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>weather App</title>
+  <!-- style file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fontawsam file -->
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <section class="searchbar">
+        <input type="search" name="search" placeholder="Enter the city">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+          </svg>
+        </button>
+      </section>
+      <section class="tem">
+        <img src="" alt="">
+        <h3>0<sup>o</sup><span>c</span></h3>
+        <h4></h4>
+      </section>
+      <section class="humidityandwind">
+        <div class="humidity">
+          <img src="./img/humidity.png" alt="">
+          <div class="data">
+            <h5>0<span>%</span></h5>
+            <h6>Humidity</h6>
+          </div>
+        </div>
+        <div class="windspeed">
+          <img src="./img/wind.png" alt="">
+          <div class="data">
+            <h5>0<span>km/h</span></h5>
+            <h6>windspeed</h6>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./dist/script.js"></script>
+  <script src="./dist/all.min.js"></script>
+</body>
+
+</html>
